@@ -222,7 +222,7 @@ if (true) {
     .then(data => {
       if (true) {
         const from = '出自 ' + data.from
-        const sub = ["生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期."]
+        const sub = []
         sub.unshift(data.hitokoto, from)
         window.typed = new Typed('#footer-type-tips', {
           strings: sub,
@@ -509,8 +509,8 @@ queueMicrotask(() => {
     GLOBAL_CONFIG_SITE.isPost && getCount()
   }
 
-  if ('Twikoo' === 'Twikoo' || !true) {
-    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
     else {
       loadTwikoo()
     }
@@ -522,10 +522,10 @@ queueMicrotask(() => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
       serverURL: '',
-      pageview: false,
+      pageview: true,
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
-      comment: false,
+      comment: true,
     }, null))
   }
 
@@ -538,8 +538,8 @@ queueMicrotask(() => {
     }
   }
 
-  if ('Twikoo' === 'Waline' || !true) {
-    if (true) anzhiyu.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  if ('Twikoo' === 'Waline' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('waline-wrap'),loadWaline)
     else setTimeout(loadWaline, 0)
   } else {
     window.loadOtherComment = loadWaline
